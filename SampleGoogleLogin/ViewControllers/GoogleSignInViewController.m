@@ -8,8 +8,8 @@
 
 #import "GoogleSignInViewController.h"
 
-NSString* client_Id = @"230563829103-n13bkoofth30e03im5pievetfmoftci3.apps.googleusercontent.com";
-NSString* secret_Id = @"SaJZN7e2q1E_-gIxEF5_Q7PB";
+NSString* client_Id = @"";
+NSString* secret_Id = @"";
 NSString* redirect_Url = @"http://localhost";
 
 @interface GoogleSignInViewController ()<UIWebViewDelegate>
