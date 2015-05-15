@@ -8,11 +8,14 @@
 
 #import "GoogleSignInViewController.h"
 
-NSString* client_Id = @"";
-NSString* secret_Id = @"";
+NSString* client_Id = @"230563829103-n13bkoofth30e03im5pievetfmoftci3.apps.googleusercontent.com";
+NSString* secret_Id = @"SaJZN7e2q1E_-gIxEF5_Q7PB";
 NSString* redirect_Url = @"http://localhost";
+NSString* access_token = nil;
+
 
 @interface GoogleSignInViewController ()<UIWebViewDelegate>
+
 
 @end
 
@@ -22,7 +25,9 @@ NSString* redirect_Url = @"http://localhost";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    NSString* urlStr = [NSString stringWithFormat:@"https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=%@&redirect_uri=%@&scope=profile&state=SampleLogin&include_granted_scopes=true",client_Id,redirect_Url];
+    NSString* scope = @"https://www.googleapis.com/auth/plus.login+email";
+    
+    NSString* urlStr = [NSString stringWithFormat:@"https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=%@&redirect_uri=%@&scope=%@&state=SampleLogin&include_granted_scopes=true",client_Id,redirect_Url,scope];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]]];
 
@@ -80,8 +85,10 @@ NSString* redirect_Url = @"http://localhost";
         if (code) {
             
             NSString *data = [NSString stringWithFormat:@"code=%@&client_id=%@&client_secret=%@&redirect_uri=%@&grant_type=authorization_code", code,client_Id,secret_Id,redirect_Url];
-            NSString *url = [NSString stringWithFormat:@"https://accounts.google.com/o/oauth2/token"];
+            NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/oauth2/v3/token"];
+            
             NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+            [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
             [request setHTTPMethod:@"POST"];
             [request setHTTPBody:[data dataUsingEncoding:NSUTF8StringEncoding]];
             
@@ -94,17 +101,16 @@ NSString* redirect_Url = @"http://localhost";
                     if (!connectionError) {
                         
                         NSLog(@"Access Token response %@",jsonResponse);
-                        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-                        
+                        [self fetchUserProfile:jsonResponse];
                     }
                 }else {
                     
                     if (connectionError) {
                         
                         NSDictionary* errorDict = [connectionError userInfo];
-                        NSString* errorMessage = [errorDict objectForKey:@""];
+                        NSString* errorMessage = [errorDict objectForKey:@"NSLocalizedDescription"];
                         
-                        [[[UIAlertView alloc]initWithTitle:@"Error" message:errorDict delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
+                        [[[UIAlertView alloc]initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@",errorMessage] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
                     }
                 }
             }];
@@ -113,4 +119,58 @@ NSString* redirect_Url = @"http://localhost";
     return YES;
 }
 
+#pragma mark <User Profile>
+
+-(void) fetchUserProfile:(id) authDict {
+    
+    
+    NSString* urlStr = [NSString stringWithFormat:@"https://www.googleapis.com/plus/v1/people/me"];
+    NSString* oAuthHeaderValue = [NSString stringWithFormat:@"%@ %@",[authDict objectForKey:@"token_type"],[authDict objectForKey:@"access_token"]];
+    
+    NSURL* url = [NSURL URLWithString:[urlStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSMutableURLRequest* urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest setHTTPMethod:@"GET"];
+    [urlRequest addValue:oAuthHeaderValue forHTTPHeaderField:@"Authorization"];
+     
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        
+        id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&connectionError];
+        NSLog(@"Profile Response %@",jsonResponse);
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+
+    }];
+    
+}
+
+
+#pragma mark <Refresh Token>
+
+-(void) getNewAccessTokenUsingRefreshToken {
+    
+    NSString *data = [NSString stringWithFormat:@"refresh_token=&client_id=%@&client_secret=%@&grant_type=refresh_token",client_Id,secret_Id];
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/oauth2/v3/token"];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    [request addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:[data dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        if (data) {
+        
+            id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&connectionError];
+            if (!connectionError) {
+                NSLog(@"Refresh Token: %@",jsonResponse);
+            }
+        }else {
+            
+            if (connectionError) {
+                
+            }
+        }
+    }];
+}
 @end

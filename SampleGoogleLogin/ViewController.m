@@ -28,10 +28,13 @@
 - (IBAction)googleSignIn:(id)sender {
     
     Class nibClass = NSClassFromString(@"GoogleSignInViewController");
+   
     UIViewController *controller =
     [[nibClass alloc] initWithNibName:nil bundle:nil];
     
-    [self.navigationController presentViewController:controller animated:YES completion:nil];
+    UINavigationController* navCont = [[UINavigationController alloc]initWithRootViewController:controller];
+    
+    [self.navigationController presentViewController:navCont animated:YES completion:nil];
 }
 
 @end

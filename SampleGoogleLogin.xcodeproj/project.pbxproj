@@ -426,6 +426,7 @@
 				FF49A3AB1B05F4FD0086E1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF49A3AC1B05F4FD0086E1C9 /* Build configuration list for PBXNativeTarget "SampleGoogleLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +435,7 @@
 				FF49A3AE1B05F4FD0086E1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
