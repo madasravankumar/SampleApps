@@ -14,6 +14,8 @@
 		FF49A3971B05F4FD0086E1C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF49A3961B05F4FD0086E1C9 /* Images.xcassets */; };
 		FF49A39A1B05F4FD0086E1C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF49A3981B05F4FD0086E1C9 /* LaunchScreen.xib */; };
 		FF49A3A61B05F4FD0086E1C9 /* SampleGoogleLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF49A3A51B05F4FD0086E1C9 /* SampleGoogleLoginTests.m */; };
+		FF49A3B21B05FEC20086E1C9 /* GoogleSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF49A3B01B05FEC20086E1C9 /* GoogleSignInViewController.m */; };
+		FF49A3B31B05FEC20086E1C9 /* GoogleSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF49A3B11B05FEC20086E1C9 /* GoogleSignInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		FF49A39F1B05F4FD0086E1C9 /* SampleGoogleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleGoogleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF49A3A41B05F4FD0086E1C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF49A3A51B05F4FD0086E1C9 /* SampleGoogleLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleGoogleLoginTests.m; sourceTree = "<group>"; };
+		FF49A3AF1B05FEC20086E1C9 /* GoogleSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleSignInViewController.h; path = ViewControllers/GoogleSignInViewController.h; sourceTree = "<group>"; };
+		FF49A3B01B05FEC20086E1C9 /* GoogleSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleSignInViewController.m; path = ViewControllers/GoogleSignInViewController.m; sourceTree = "<group>"; };
+		FF49A3B11B05FEC20086E1C9 /* GoogleSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoogleSignInViewController.xib; path = ViewControllers/GoogleSignInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 				FF49A38E1B05F4FD0086E1C9 /* AppDelegate.m */,
 				FF49A3901B05F4FD0086E1C9 /* ViewController.h */,
 				FF49A3911B05F4FD0086E1C9 /* ViewController.m */,
+				FF49A3AF1B05FEC20086E1C9 /* GoogleSignInViewController.h */,
+				FF49A3B01B05FEC20086E1C9 /* GoogleSignInViewController.m */,
+				FF49A3B11B05FEC20086E1C9 /* GoogleSignInViewController.xib */,
 				FF49A3931B05F4FD0086E1C9 /* Main.storyboard */,
 				FF49A3961B05F4FD0086E1C9 /* Images.xcassets */,
 				FF49A3981B05F4FD0086E1C9 /* LaunchScreen.xib */,
@@ -202,6 +210,7 @@
 				FF49A3951B05F4FD0086E1C9 /* Main.storyboard in Resources */,
 				FF49A39A1B05F4FD0086E1C9 /* LaunchScreen.xib in Resources */,
 				FF49A3971B05F4FD0086E1C9 /* Images.xcassets in Resources */,
+				FF49A3B31B05FEC20086E1C9 /* GoogleSignInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				FF49A3921B05F4FD0086E1C9 /* ViewController.m in Sources */,
 				FF49A38F1B05F4FD0086E1C9 /* AppDelegate.m in Sources */,
 				FF49A38C1B05F4FD0086E1C9 /* main.m in Sources */,
+				FF49A3B21B05FEC20086E1C9 /* GoogleSignInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
