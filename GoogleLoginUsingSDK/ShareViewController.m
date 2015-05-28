@@ -9,7 +9,8 @@
 #import "ShareViewController.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
 #import "ItemProvider.h"
-#import "CustomActivity.h"
+#import "GoogleActivity.h"
+#import "LinkedInActivity.h"
 
 @interface ShareViewController ()
 
@@ -29,9 +30,10 @@
 - (IBAction)shareButtonPressed:(id)sender {
     
     ItemProvider* itemObj = [[ItemProvider alloc]init];
-    CustomActivity* customAc1 = [[CustomActivity alloc]init];
+    GoogleActivity* customAc1 = [[GoogleActivity alloc]init];
+    LinkedInActivity* linkedinAc = [[LinkedInActivity alloc]init];
     
-    UIActivityViewController* activityVc = [[UIActivityViewController alloc]initWithActivityItems:[NSArray arrayWithObjects:itemObj, nil] applicationActivities:@[customAc1]];
+    UIActivityViewController* activityVc = [[UIActivityViewController alloc]initWithActivityItems:[NSArray arrayWithObjects:itemObj, nil] applicationActivities:@[customAc1,linkedinAc]];
     activityVc.excludedActivityTypes = @[UIActivityTypeAirDrop,UIActivityTypeAssignToContact,UIActivityTypeCopyToPasteboard,UIActivityTypeAddToReadingList,UIActivityTypePrint,UIActivityTypeSaveToCameraRoll];
     [self presentViewController:activityVc animated:YES completion:^{
         

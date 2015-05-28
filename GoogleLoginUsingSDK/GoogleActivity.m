@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 Gemini-iMac2. All rights reserved.
 //
 
-#import "CustomActivity.h"
+#import "GoogleActivity.h"
 #import <GooglePlus/GooglePlus.h>
 #import <GoogleOpenSource/GoogleOpenSource.h>
 
-@interface CustomActivity ()
+@interface GoogleActivity ()
 
 @property (strong, nonatomic) id <GPPShareBuilder> shareBuilder;
 
 @end
 
-@implementation CustomActivity
+@implementation GoogleActivity
 
 -(NSString *) activityType {
     return @"com.gemini.googleplus";

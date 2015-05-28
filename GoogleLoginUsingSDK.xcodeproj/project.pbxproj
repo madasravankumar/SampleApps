@@ -29,8 +29,9 @@
 		FF49A3FF1B060F6C0086E1C9 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF49A3FD1B060F6C0086E1C9 /* GooglePlus.framework */; };
 		FF49A4011B060FB40086E1C9 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF49A4001B060FB40086E1C9 /* GooglePlus.bundle */; };
 		FF5FA9771B1711FC001DA46B /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA9761B1711FC001DA46B /* ShareViewController.m */; };
-		FF5FA97E1B171A2A001DA46B /* CustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA97B1B171A2A001DA46B /* CustomActivity.m */; };
+		FF5FA97E1B171A2A001DA46B /* GoogleActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA97B1B171A2A001DA46B /* GoogleActivity.m */; };
 		FF5FA97F1B171A2A001DA46B /* ItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA97D1B171A2A001DA46B /* ItemProvider.m */; };
+		FF5FA9881B174500001DA46B /* LinkedInActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA9871B174500001DA46B /* LinkedInActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,10 +74,12 @@
 		FF49A4001B060FB40086E1C9 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.bundle"; sourceTree = "<group>"; };
 		FF5FA9751B1711FC001DA46B /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		FF5FA9761B1711FC001DA46B /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
-		FF5FA97A1B171A2A001DA46B /* CustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivity.h; sourceTree = "<group>"; };
-		FF5FA97B1B171A2A001DA46B /* CustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivity.m; sourceTree = "<group>"; };
+		FF5FA97A1B171A2A001DA46B /* GoogleActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleActivity.h; sourceTree = "<group>"; };
+		FF5FA97B1B171A2A001DA46B /* GoogleActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleActivity.m; sourceTree = "<group>"; };
 		FF5FA97C1B171A2A001DA46B /* ItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemProvider.h; sourceTree = "<group>"; };
 		FF5FA97D1B171A2A001DA46B /* ItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemProvider.m; sourceTree = "<group>"; };
+		FF5FA9861B174500001DA46B /* LinkedInActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInActivity.h; sourceTree = "<group>"; };
+		FF5FA9871B174500001DA46B /* LinkedInActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +135,10 @@
 		FF49A3BF1B060E250086E1C9 /* GoogleLoginUsingSDK */ = {
 			isa = PBXGroup;
 			children = (
-				FF5FA97A1B171A2A001DA46B /* CustomActivity.h */,
-				FF5FA97B1B171A2A001DA46B /* CustomActivity.m */,
+				FF5FA97A1B171A2A001DA46B /* GoogleActivity.h */,
+				FF5FA97B1B171A2A001DA46B /* GoogleActivity.m */,
+				FF5FA9861B174500001DA46B /* LinkedInActivity.h */,
+				FF5FA9871B174500001DA46B /* LinkedInActivity.m */,
 				FF5FA97C1B171A2A001DA46B /* ItemProvider.h */,
 				FF5FA97D1B171A2A001DA46B /* ItemProvider.m */,
 				FF49A3C41B060E250086E1C9 /* AppDelegate.h */,
@@ -299,11 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF49A3C91B060E250086E1C9 /* ViewController.m in Sources */,
+				FF5FA9881B174500001DA46B /* LinkedInActivity.m in Sources */,
 				FF49A3C61B060E250086E1C9 /* AppDelegate.m in Sources */,
 				FF5FA9771B1711FC001DA46B /* ShareViewController.m in Sources */,
 				FF5FA97F1B171A2A001DA46B /* ItemProvider.m in Sources */,
 				FF49A3C31B060E250086E1C9 /* main.m in Sources */,
-				FF5FA97E1B171A2A001DA46B /* CustomActivity.m in Sources */,
+				FF5FA97E1B171A2A001DA46B /* GoogleActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

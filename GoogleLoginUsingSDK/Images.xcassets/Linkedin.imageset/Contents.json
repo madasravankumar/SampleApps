@@ -3,15 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Google.png"
+      "filename" : "Linkedin.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "2x",
+      "filename" : "Linkedin@2x.png"
     }
   ],
   "info" : {

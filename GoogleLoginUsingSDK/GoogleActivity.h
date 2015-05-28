@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomActivity : UIActivity
+@interface GoogleActivity : UIActivity
 
 @end
