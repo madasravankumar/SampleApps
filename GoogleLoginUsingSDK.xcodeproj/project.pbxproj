@@ -28,6 +28,9 @@
 		FF49A3FE1B060F6C0086E1C9 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF49A3FC1B060F6C0086E1C9 /* GoogleOpenSource.framework */; };
 		FF49A3FF1B060F6C0086E1C9 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF49A3FD1B060F6C0086E1C9 /* GooglePlus.framework */; };
 		FF49A4011B060FB40086E1C9 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF49A4001B060FB40086E1C9 /* GooglePlus.bundle */; };
+		FF5FA9771B1711FC001DA46B /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA9761B1711FC001DA46B /* ShareViewController.m */; };
+		FF5FA97E1B171A2A001DA46B /* CustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA97B1B171A2A001DA46B /* CustomActivity.m */; };
+		FF5FA97F1B171A2A001DA46B /* ItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5FA97D1B171A2A001DA46B /* ItemProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,12 @@
 		FF49A3FC1B060F6C0086E1C9 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GoogleOpenSource.framework"; sourceTree = "<group>"; };
 		FF49A3FD1B060F6C0086E1C9 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.framework"; sourceTree = "<group>"; };
 		FF49A4001B060FB40086E1C9 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.bundle"; sourceTree = "<group>"; };
+		FF5FA9751B1711FC001DA46B /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		FF5FA9761B1711FC001DA46B /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		FF5FA97A1B171A2A001DA46B /* CustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivity.h; sourceTree = "<group>"; };
+		FF5FA97B1B171A2A001DA46B /* CustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivity.m; sourceTree = "<group>"; };
+		FF5FA97C1B171A2A001DA46B /* ItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemProvider.h; sourceTree = "<group>"; };
+		FF5FA97D1B171A2A001DA46B /* ItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +132,16 @@
 		FF49A3BF1B060E250086E1C9 /* GoogleLoginUsingSDK */ = {
 			isa = PBXGroup;
 			children = (
+				FF5FA97A1B171A2A001DA46B /* CustomActivity.h */,
+				FF5FA97B1B171A2A001DA46B /* CustomActivity.m */,
+				FF5FA97C1B171A2A001DA46B /* ItemProvider.h */,
+				FF5FA97D1B171A2A001DA46B /* ItemProvider.m */,
 				FF49A3C41B060E250086E1C9 /* AppDelegate.h */,
 				FF49A3C51B060E250086E1C9 /* AppDelegate.m */,
 				FF49A3C71B060E250086E1C9 /* ViewController.h */,
 				FF49A3C81B060E250086E1C9 /* ViewController.m */,
+				FF5FA9751B1711FC001DA46B /* ShareViewController.h */,
+				FF5FA9761B1711FC001DA46B /* ShareViewController.m */,
 				FF49A3CA1B060E250086E1C9 /* Main.storyboard */,
 				FF49A3CD1B060E250086E1C9 /* Images.xcassets */,
 				FF49A3CF1B060E250086E1C9 /* LaunchScreen.xib */,
@@ -285,7 +300,10 @@
 			files = (
 				FF49A3C91B060E250086E1C9 /* ViewController.m in Sources */,
 				FF49A3C61B060E250086E1C9 /* AppDelegate.m in Sources */,
+				FF5FA9771B1711FC001DA46B /* ShareViewController.m in Sources */,
+				FF5FA97F1B171A2A001DA46B /* ItemProvider.m in Sources */,
 				FF49A3C31B060E250086E1C9 /* main.m in Sources */,
+				FF5FA97E1B171A2A001DA46B /* CustomActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

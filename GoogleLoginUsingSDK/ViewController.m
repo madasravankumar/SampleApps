@@ -55,6 +55,10 @@
         
         id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&connectionError];
         NSLog(@"Profile Response %@",jsonResponse);
+        
+        UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController* viewController = [storyBoard instantiateViewControllerWithIdentifier:@"ShareViewController"];
+        [self.navigationController pushViewController:viewController animated:YES];
     }];
     
 }
@@ -70,7 +74,7 @@
     signIn.clientID = @"230563829103-n13bkoofth30e03im5pievetfmoftci3.apps.googleusercontent.com";
     
     // Uncomment one of these two statements for the scope you chose in the previous step
-    signIn.scopes = @[@"https://www.googleapis.com/auth/userinfo.email",@"profile"];
+    signIn.scopes = @[@"https://www.googleapis.com/auth/userinfo.email",kGTLAuthScopePlusLogin];
     signIn.delegate = self;
     [signIn authenticate];
 
