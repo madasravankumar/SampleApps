@@ -71,7 +71,7 @@
     signIn.shouldFetchGoogleUserEmail = YES;  // Uncomment to get the user's email
     
     // You previously set kClientId in the "Initialize the Google+ client" step
-    signIn.clientID = @"230563829103-n13bkoofth30e03im5pievetfmoftci3.apps.googleusercontent.com";
+    signIn.clientID = @"";
     
     // Uncomment one of these two statements for the scope you chose in the previous step
     signIn.scopes = @[@"https://www.googleapis.com/auth/userinfo.email",kGTLAuthScopePlusLogin];
