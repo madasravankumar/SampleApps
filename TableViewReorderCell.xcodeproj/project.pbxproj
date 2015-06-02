@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFA303931B1D9DE900666B33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303921B1D9DE900666B33 /* main.m */; };
+		FFA303961B1D9DE900666B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303951B1D9DE900666B33 /* AppDelegate.m */; };
+		FFA303991B1D9DE900666B33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303981B1D9DE900666B33 /* ViewController.m */; };
+		FFA3039C1B1D9DE900666B33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA3039A1B1D9DE900666B33 /* Main.storyboard */; };
+		FFA3039E1B1D9DE900666B33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA3039D1B1D9DE900666B33 /* Images.xcassets */; };
+		FFA303A11B1D9DE900666B33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFA3039F1B1D9DE900666B33 /* LaunchScreen.xib */; };
+		FFA303AD1B1D9DE900666B33 /* TableViewReorderCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303AC1B1D9DE900666B33 /* TableViewReorderCellTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFA303A71B1D9DE900666B33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA303851B1D9DE900666B33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA3038C1B1D9DE900666B33;
+			remoteInfo = TableViewReorderCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFA3038D1B1D9DE900666B33 /* TableViewReorderCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewReorderCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA303911B1D9DE900666B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA303921B1D9DE900666B33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFA303941B1D9DE900666B33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFA303951B1D9DE900666B33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFA303971B1D9DE900666B33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFA303981B1D9DE900666B33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFA3039B1B1D9DE900666B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA3039D1B1D9DE900666B33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFA303A01B1D9DE900666B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FFA303A61B1D9DE900666B33 /* TableViewReorderCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewReorderCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA303AB1B1D9DE900666B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA303AC1B1D9DE900666B33 /* TableViewReorderCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewReorderCellTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA3038A1B1D9DE900666B33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA303A31B1D9DE900666B33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFA303841B1D9DE900666B33 = {
+			isa = PBXGroup;
+			children = (
+				FFA3038F1B1D9DE900666B33 /* TableViewReorderCell */,
+				FFA303A91B1D9DE900666B33 /* TableViewReorderCellTests */,
+				FFA3038E1B1D9DE900666B33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA3038E1B1D9DE900666B33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA3038D1B1D9DE900666B33 /* TableViewReorderCell.app */,
+				FFA303A61B1D9DE900666B33 /* TableViewReorderCellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA3038F1B1D9DE900666B33 /* TableViewReorderCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFA303941B1D9DE900666B33 /* AppDelegate.h */,
+				FFA303951B1D9DE900666B33 /* AppDelegate.m */,
+				FFA303971B1D9DE900666B33 /* ViewController.h */,
+				FFA303981B1D9DE900666B33 /* ViewController.m */,
+				FFA3039A1B1D9DE900666B33 /* Main.storyboard */,
+				FFA3039D1B1D9DE900666B33 /* Images.xcassets */,
+				FFA3039F1B1D9DE900666B33 /* LaunchScreen.xib */,
+				FFA303901B1D9DE900666B33 /* Supporting Files */,
+			);
+			path = TableViewReorderCell;
+			sourceTree = "<group>";
+		};
+		FFA303901B1D9DE900666B33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFA303911B1D9DE900666B33 /* Info.plist */,
+				FFA303921B1D9DE900666B33 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFA303A91B1D9DE900666B33 /* TableViewReorderCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA303AC1B1D9DE900666B33 /* TableViewReorderCellTests.m */,
+				FFA303AA1B1D9DE900666B33 /* Supporting Files */,
+			);
+			path = TableViewReorderCellTests;
+			sourceTree = "<group>";
+		};
+		FFA303AA1B1D9DE900666B33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFA303AB1B1D9DE900666B33 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA3038C1B1D9DE900666B33 /* TableViewReorderCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA303B01B1D9DE900666B33 /* Build configuration list for PBXNativeTarget "TableViewReorderCell" */;
+			buildPhases = (
+				FFA303891B1D9DE900666B33 /* Sources */,
+				FFA3038A1B1D9DE900666B33 /* Frameworks */,
+				FFA3038B1B1D9DE900666B33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewReorderCell;
+			productName = TableViewReorderCell;
+			productReference = FFA3038D1B1D9DE900666B33 /* TableViewReorderCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFA303A51B1D9DE900666B33 /* TableViewReorderCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA303B31B1D9DE900666B33 /* Build configuration list for PBXNativeTarget "TableViewReorderCellTests" */;
+			buildPhases = (
+				FFA303A21B1D9DE900666B33 /* Sources */,
+				FFA303A31B1D9DE900666B33 /* Frameworks */,
+				FFA303A41B1D9DE900666B33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA303A81B1D9DE900666B33 /* PBXTargetDependency */,
+			);
+			name = TableViewReorderCellTests;
+			productName = TableViewReorderCellTests;
+			productReference = FFA303A61B1D9DE900666B33 /* TableViewReorderCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA303851B1D9DE900666B33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Gemini-iMac2";
+				TargetAttributes = {
+					FFA3038C1B1D9DE900666B33 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FFA303A51B1D9DE900666B33 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FFA3038C1B1D9DE900666B33;
+					};
+				};
+			};
+			buildConfigurationList = FFA303881B1D9DE900666B33 /* Build configuration list for PBXProject "TableViewReorderCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA303841B1D9DE900666B33;
+			productRefGroup = FFA3038E1B1D9DE900666B33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA3038C1B1D9DE900666B33 /* TableViewReorderCell */,
+				FFA303A51B1D9DE900666B33 /* TableViewReorderCellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA3038B1B1D9DE900666B33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA3039C1B1D9DE900666B33 /* Main.storyboard in Resources */,
+				FFA303A11B1D9DE900666B33 /* LaunchScreen.xib in Resources */,
+				FFA3039E1B1D9DE900666B33 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA303A41B1D9DE900666B33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA303891B1D9DE900666B33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA303991B1D9DE900666B33 /* ViewController.m in Sources */,
+				FFA303961B1D9DE900666B33 /* AppDelegate.m in Sources */,
+				FFA303931B1D9DE900666B33 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA303A21B1D9DE900666B33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA303AD1B1D9DE900666B33 /* TableViewReorderCellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFA303A81B1D9DE900666B33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA3038C1B1D9DE900666B33 /* TableViewReorderCell */;
+			targetProxy = FFA303A71B1D9DE900666B33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFA3039A1B1D9DE900666B33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA3039B1B1D9DE900666B33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFA3039F1B1D9DE900666B33 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA303A01B1D9DE900666B33 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA303AE1B1D9DE900666B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFA303AF1B1D9DE900666B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA303B11B1D9DE900666B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewReorderCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFA303B21B1D9DE900666B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewReorderCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFA303B41B1D9DE900666B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableViewReorderCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewReorderCell.app/TableViewReorderCell";
+			};
+			name = Debug;
+		};
+		FFA303B51B1D9DE900666B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableViewReorderCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewReorderCell.app/TableViewReorderCell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA303881B1D9DE900666B33 /* Build configuration list for PBXProject "TableViewReorderCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA303AE1B1D9DE900666B33 /* Debug */,
+				FFA303AF1B1D9DE900666B33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA303B01B1D9DE900666B33 /* Build configuration list for PBXNativeTarget "TableViewReorderCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA303B11B1D9DE900666B33 /* Debug */,
+				FFA303B21B1D9DE900666B33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFA303B31B1D9DE900666B33 /* Build configuration list for PBXNativeTarget "TableViewReorderCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA303B41B1D9DE900666B33 /* Debug */,
+				FFA303B51B1D9DE900666B33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA303851B1D9DE900666B33 /* Project object */;
+}
