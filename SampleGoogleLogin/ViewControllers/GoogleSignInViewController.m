@@ -8,9 +8,9 @@
 
 #import "GoogleSignInViewController.h"
 
-NSString* client_Id = @"";
-NSString* secret_Id = @"";
-NSString* redirect_Url = @"http://localhost";
+NSString* client_Id = @"514693828882-9mhh7mgbauqg21eqimp55ti0h76rrdo7.apps.googleusercontent.com";
+NSString* secret_Id = @"QLdx9ZllLOHzaQs55BxwXCoP";
+NSString* redirect_Url = @"https://www.example.com/oauth2callback";
 NSString* access_token = nil;
 
 
@@ -25,7 +25,7 @@ NSString* access_token = nil;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    NSString* scope = @"https://www.googleapis.com/auth/plus.login+email";
+    NSString* scope = @"https://www.googleapis.com/auth/plus.login+email+https://www.googleapis.com/auth/devstorage.full_control";
     
     NSString* urlStr = [NSString stringWithFormat:@"https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=%@&redirect_uri=%@&scope=%@&state=SampleLogin&include_granted_scopes=true",client_Id,redirect_Url,scope];
     
@@ -51,7 +51,7 @@ NSString* access_token = nil;
 #pragma mark <UIWebViewDelegate> Methods
 
 -(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    
+    NSLog(@"Error:%@",error);
 }
 
 -(void) webViewDidFinishLoad:(UIWebView *)webView {
@@ -60,8 +60,7 @@ NSString* access_token = nil;
 
 -(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
-    
-    if ([[[request URL]host]isEqualToString:@"localhost"]) {
+    if ([[[request URL]host]isEqualToString:@"www.example.com"]) {
         
         NSLog(@"Host: %@",[request.URL host]);
         
@@ -101,7 +100,10 @@ NSString* access_token = nil;
                     if (!connectionError) {
                         
                         NSLog(@"Access Token response %@",jsonResponse);
-                        [self fetchUserProfile:jsonResponse];
+                        //[self fetchUserProfile:jsonResponse];
+                       // [self uploadImageIntoGoogleCloudAPI:jsonResponse];
+                        [self getUploadedObjects:jsonResponse];
+                        
                     }
                 }else {
                     
@@ -138,13 +140,49 @@ NSString* access_token = nil;
         
         id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&connectionError];
         NSLog(@"Profile Response %@",jsonResponse);
-        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-
+       // [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }];
     
 }
 
+-(void) uploadImageIntoGoogleCloudAPI:(id) authDict {
+    
+    NSData* imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"image"], 1.0);
+    
+    NSString* urlStr = [NSString stringWithFormat:@"https://www.googleapis.com/upload/storage/v1/b/samplestudio123/o?uploadType=media&name=myObject1"];
+    NSURL* url = [NSURL URLWithString:urlStr];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:imageData];
+    [request addValue:[NSString stringWithFormat:@"Bearer %@",[authDict objectForKey:@"access_token"]] forHTTPHeaderField:@"Authorization"];
+   // [request addValue:@"AIzaSyBP3mtKR69dZ1u0AN0X6CTWQpUEDe9dhT8" forHTTPHeaderField:@"key"];
+    [request addValue:@"image/jpeg" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:[NSString stringWithFormat:@"%s",imageData.bytes] forHTTPHeaderField:@"Content-Length"];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+       
+        NSLog(@"Error: %@",connectionError);
+        id responseData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&connectionError];
+        NSLog(@"response Data:%@",responseData);
+    }];
+}
+-(void) getUploadedObjects:(id) authDict {
+    NSString* urlStr = [NSString stringWithFormat:@"https://www.googleapis.com/storage/v1/b/samplestudio123/o?object=myObject1"];
+    NSURL* url = [NSURL URLWithString:urlStr];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+    [request addValue:[NSString stringWithFormat:@"Bearer %@",[authDict objectForKey:@"access_token"]] forHTTPHeaderField:@"Authorization"];
+    // [request addValue:@"AIzaSyBP3mtKR69dZ1u0AN0X6CTWQpUEDe9dhT8" forHTTPHeaderField:@"key"];
+    //[request addValue:@"image/jpeg" forHTTPHeaderField:@"Content-Type"];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        NSLog(@"Error: %@",connectionError);
+        id responseData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&connectionError];
+        NSLog(@"response Data:%@",responseData);
+    }];
 
+}
 #pragma mark <Refresh Token>
 
 -(void) getNewAccessTokenUsingRefreshToken {
