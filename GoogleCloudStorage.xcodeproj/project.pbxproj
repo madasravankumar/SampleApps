@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFCC543B1B5677500000AF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC543A1B5677500000AF2E /* main.m */; };
+		FFCC543E1B5677500000AF2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC543D1B5677500000AF2E /* AppDelegate.m */; };
+		FFCC54411B5677500000AF2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54401B5677500000AF2E /* ViewController.m */; };
+		FFCC54441B5677500000AF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCC54421B5677500000AF2E /* Main.storyboard */; };
+		FFCC54461B5677500000AF2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFCC54451B5677500000AF2E /* Images.xcassets */; };
+		FFCC54491B5677500000AF2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCC54471B5677500000AF2E /* LaunchScreen.xib */; };
+		FFCC54551B5677500000AF2E /* GoogleCloudStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54541B5677500000AF2E /* GoogleCloudStorageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFCC544F1B5677500000AF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFCC542D1B5677500000AF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFCC54341B5677500000AF2E;
+			remoteInfo = GoogleCloudStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFCC54351B5677500000AF2E /* GoogleCloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleCloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCC54391B5677500000AF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCC543A1B5677500000AF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFCC543C1B5677500000AF2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFCC543D1B5677500000AF2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFCC543F1B5677500000AF2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFCC54401B5677500000AF2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFCC54431B5677500000AF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFCC54451B5677500000AF2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFCC54481B5677500000AF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FFCC544E1B5677500000AF2E /* GoogleCloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleCloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCC54531B5677500000AF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCC54541B5677500000AF2E /* GoogleCloudStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCloudStorageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCC54321B5677500000AF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCC544B1B5677500000AF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFCC542C1B5677500000AF2E = {
+			isa = PBXGroup;
+			children = (
+				FFCC54371B5677500000AF2E /* GoogleCloudStorage */,
+				FFCC54511B5677500000AF2E /* GoogleCloudStorageTests */,
+				FFCC54361B5677500000AF2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCC54361B5677500000AF2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54351B5677500000AF2E /* GoogleCloudStorage.app */,
+				FFCC544E1B5677500000AF2E /* GoogleCloudStorageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCC54371B5677500000AF2E /* GoogleCloudStorage */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC543C1B5677500000AF2E /* AppDelegate.h */,
+				FFCC543D1B5677500000AF2E /* AppDelegate.m */,
+				FFCC543F1B5677500000AF2E /* ViewController.h */,
+				FFCC54401B5677500000AF2E /* ViewController.m */,
+				FFCC54421B5677500000AF2E /* Main.storyboard */,
+				FFCC54451B5677500000AF2E /* Images.xcassets */,
+				FFCC54471B5677500000AF2E /* LaunchScreen.xib */,
+				FFCC54381B5677500000AF2E /* Supporting Files */,
+			);
+			path = GoogleCloudStorage;
+			sourceTree = "<group>";
+		};
+		FFCC54381B5677500000AF2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54391B5677500000AF2E /* Info.plist */,
+				FFCC543A1B5677500000AF2E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFCC54511B5677500000AF2E /* GoogleCloudStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54541B5677500000AF2E /* GoogleCloudStorageTests.m */,
+				FFCC54521B5677500000AF2E /* Supporting Files */,
+			);
+			path = GoogleCloudStorageTests;
+			sourceTree = "<group>";
+		};
+		FFCC54521B5677500000AF2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54531B5677500000AF2E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCC54341B5677500000AF2E /* GoogleCloudStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCC54581B5677500000AF2E /* Build configuration list for PBXNativeTarget "GoogleCloudStorage" */;
+			buildPhases = (
+				FFCC54311B5677500000AF2E /* Sources */,
+				FFCC54321B5677500000AF2E /* Frameworks */,
+				FFCC54331B5677500000AF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleCloudStorage;
+			productName = GoogleCloudStorage;
+			productReference = FFCC54351B5677500000AF2E /* GoogleCloudStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFCC544D1B5677500000AF2E /* GoogleCloudStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCC545B1B5677500000AF2E /* Build configuration list for PBXNativeTarget "GoogleCloudStorageTests" */;
+			buildPhases = (
+				FFCC544A1B5677500000AF2E /* Sources */,
+				FFCC544B1B5677500000AF2E /* Frameworks */,
+				FFCC544C1B5677500000AF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFCC54501B5677500000AF2E /* PBXTargetDependency */,
+			);
+			name = GoogleCloudStorageTests;
+			productName = GoogleCloudStorageTests;
+			productReference = FFCC544E1B5677500000AF2E /* GoogleCloudStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFCC542D1B5677500000AF2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Gemini-iMac2";
+				TargetAttributes = {
+					FFCC54341B5677500000AF2E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FFCC544D1B5677500000AF2E = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FFCC54341B5677500000AF2E;
+					};
+				};
+			};
+			buildConfigurationList = FFCC54301B5677500000AF2E /* Build configuration list for PBXProject "GoogleCloudStorage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFCC542C1B5677500000AF2E;
+			productRefGroup = FFCC54361B5677500000AF2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCC54341B5677500000AF2E /* GoogleCloudStorage */,
+				FFCC544D1B5677500000AF2E /* GoogleCloudStorageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCC54331B5677500000AF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCC54441B5677500000AF2E /* Main.storyboard in Resources */,
+				FFCC54491B5677500000AF2E /* LaunchScreen.xib in Resources */,
+				FFCC54461B5677500000AF2E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCC544C1B5677500000AF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCC54311B5677500000AF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCC54411B5677500000AF2E /* ViewController.m in Sources */,
+				FFCC543E1B5677500000AF2E /* AppDelegate.m in Sources */,
+				FFCC543B1B5677500000AF2E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFCC544A1B5677500000AF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCC54551B5677500000AF2E /* GoogleCloudStorageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFCC54501B5677500000AF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFCC54341B5677500000AF2E /* GoogleCloudStorage */;
+			targetProxy = FFCC544F1B5677500000AF2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFCC54421B5677500000AF2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCC54431B5677500000AF2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFCC54471B5677500000AF2E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCC54481B5677500000AF2E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFCC54561B5677500000AF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFCC54571B5677500000AF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFCC54591B5677500000AF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogleCloudStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFCC545A1B5677500000AF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogleCloudStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFCC545C1B5677500000AF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogleCloudStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleCloudStorage.app/GoogleCloudStorage";
+			};
+			name = Debug;
+		};
+		FFCC545D1B5677500000AF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogleCloudStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleCloudStorage.app/GoogleCloudStorage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFCC54301B5677500000AF2E /* Build configuration list for PBXProject "GoogleCloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCC54561B5677500000AF2E /* Debug */,
+				FFCC54571B5677500000AF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCC54581B5677500000AF2E /* Build configuration list for PBXNativeTarget "GoogleCloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCC54591B5677500000AF2E /* Debug */,
+				FFCC545A1B5677500000AF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFCC545B1B5677500000AF2E /* Build configuration list for PBXNativeTarget "GoogleCloudStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCC545C1B5677500000AF2E /* Debug */,
+				FFCC545D1B5677500000AF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFCC542D1B5677500000AF2E /* Project object */;
+}
