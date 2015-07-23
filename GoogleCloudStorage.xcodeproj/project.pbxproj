@@ -14,6 +14,41 @@
 		FFCC54461B5677500000AF2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFCC54451B5677500000AF2E /* Images.xcassets */; };
 		FFCC54491B5677500000AF2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCC54471B5677500000AF2E /* LaunchScreen.xib */; };
 		FFCC54551B5677500000AF2E /* GoogleCloudStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54541B5677500000AF2E /* GoogleCloudStorageTests.m */; };
+		FFCC547D1B5677B80000AF2E /* GTLQueryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54621B5677B80000AF2E /* GTLQueryStorage.m */; };
+		FFCC547E1B5677B80000AF2E /* GTLServiceStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54641B5677B80000AF2E /* GTLServiceStorage.m */; };
+		FFCC547F1B5677B80000AF2E /* GTLStorage_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54661B5677B80000AF2E /* GTLStorage_Sources.m */; };
+		FFCC54801B5677B80000AF2E /* GTLStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54681B5677B80000AF2E /* GTLStorageBucket.m */; };
+		FFCC54811B5677B80000AF2E /* GTLStorageBucketAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC546A1B5677B80000AF2E /* GTLStorageBucketAccessControl.m */; };
+		FFCC54821B5677B80000AF2E /* GTLStorageBucketAccessControls.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC546C1B5677B80000AF2E /* GTLStorageBucketAccessControls.m */; };
+		FFCC54831B5677B80000AF2E /* GTLStorageBuckets.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC546E1B5677B80000AF2E /* GTLStorageBuckets.m */; };
+		FFCC54841B5677B80000AF2E /* GTLStorageChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54701B5677B80000AF2E /* GTLStorageChannel.m */; };
+		FFCC54851B5677B80000AF2E /* GTLStorageConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54721B5677B80000AF2E /* GTLStorageConstants.m */; };
+		FFCC54861B5677B80000AF2E /* GTLStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54741B5677B80000AF2E /* GTLStorageObject.m */; };
+		FFCC54871B5677B80000AF2E /* GTLStorageObjectAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54761B5677B80000AF2E /* GTLStorageObjectAccessControl.m */; };
+		FFCC54881B5677B80000AF2E /* GTLStorageObjectAccessControls.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54781B5677B80000AF2E /* GTLStorageObjectAccessControls.m */; };
+		FFCC54891B5677B80000AF2E /* GTLStorageObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC547A1B5677B80000AF2E /* GTLStorageObjects.m */; };
+		FFCC548A1B5677B80000AF2E /* GTLStorageRewriteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC547C1B5677B80000AF2E /* GTLStorageRewriteResponse.m */; };
+		FFCC548E1B5677CB0000AF2E /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC548B1B5677CB0000AF2E /* GoogleOpenSource.framework */; };
+		FFCC548F1B5677CB0000AF2E /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FFCC548C1B5677CB0000AF2E /* GooglePlus.bundle */; };
+		FFCC54901B5677CB0000AF2E /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC548D1B5677CB0000AF2E /* GooglePlus.framework */; };
+		FFCC54921B567AD10000AF2E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54911B567AD10000AF2E /* AudioToolbox.framework */; };
+		FFCC54941B567AD60000AF2E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54931B567AD60000AF2E /* CoreText.framework */; };
+		FFCC54961B567AE00000AF2E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54951B567AE00000AF2E /* AddressBook.framework */; };
+		FFCC54981B567AED0000AF2E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54971B567AED0000AF2E /* AssetsLibrary.framework */; };
+		FFCC549A1B567AF20000AF2E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54991B567AF20000AF2E /* CoreLocation.framework */; };
+		FFCC549C1B567AF70000AF2E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC549B1B567AF70000AF2E /* CoreMotion.framework */; };
+		FFCC549E1B567B060000AF2E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC549D1B567B060000AF2E /* MediaPlayer.framework */; };
+		FFCC54A01B567B100000AF2E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC549F1B567B0F0000AF2E /* Security.framework */; };
+		FFCC54A21B567B1D0000AF2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54A11B567B1D0000AF2E /* CoreGraphics.framework */; };
+		FFCC54A41B567B230000AF2E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54A31B567B230000AF2E /* MobileCoreServices.framework */; };
+		FFCC54A61B567B2A0000AF2E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54A51B567B2A0000AF2E /* SystemConfiguration.framework */; };
+		FFCC54A81B567B370000AF2E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54A71B567B370000AF2E /* CFNetwork.framework */; };
+		FFCC54AA1B567B3D0000AF2E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCC54A91B567B3D0000AF2E /* QuartzCore.framework */; };
+		FFCC54B81B56A7F90000AF2E /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54AE1B56A7F90000AF2E /* MCNewCustomLayer.m */; };
+		FFCC54B91B56A7F90000AF2E /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54B11B56A7F90000AF2E /* MCNewCustomLayeredView.m */; };
+		FFCC54BA1B56A7F90000AF2E /* MCPercentageDoughnutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54B31B56A7F90000AF2E /* MCPercentageDoughnutView.m */; };
+		FFCC54BB1B56A7F90000AF2E /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54B51B56A7F90000AF2E /* MCSliceLayer.m */; };
+		FFCC54BC1B56A7F90000AF2E /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC54B71B56A7F90000AF2E /* MCUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +75,62 @@
 		FFCC544E1B5677500000AF2E /* GoogleCloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleCloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCC54531B5677500000AF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFCC54541B5677500000AF2E /* GoogleCloudStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCloudStorageTests.m; sourceTree = "<group>"; };
+		FFCC54611B5677B80000AF2E /* GTLQueryStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryStorage.h; sourceTree = "<group>"; };
+		FFCC54621B5677B80000AF2E /* GTLQueryStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryStorage.m; sourceTree = "<group>"; };
+		FFCC54631B5677B80000AF2E /* GTLServiceStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServiceStorage.h; sourceTree = "<group>"; };
+		FFCC54641B5677B80000AF2E /* GTLServiceStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServiceStorage.m; sourceTree = "<group>"; };
+		FFCC54651B5677B80000AF2E /* GTLStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorage.h; sourceTree = "<group>"; };
+		FFCC54661B5677B80000AF2E /* GTLStorage_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorage_Sources.m; sourceTree = "<group>"; };
+		FFCC54671B5677B80000AF2E /* GTLStorageBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageBucket.h; sourceTree = "<group>"; };
+		FFCC54681B5677B80000AF2E /* GTLStorageBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageBucket.m; sourceTree = "<group>"; };
+		FFCC54691B5677B80000AF2E /* GTLStorageBucketAccessControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageBucketAccessControl.h; sourceTree = "<group>"; };
+		FFCC546A1B5677B80000AF2E /* GTLStorageBucketAccessControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageBucketAccessControl.m; sourceTree = "<group>"; };
+		FFCC546B1B5677B80000AF2E /* GTLStorageBucketAccessControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageBucketAccessControls.h; sourceTree = "<group>"; };
+		FFCC546C1B5677B80000AF2E /* GTLStorageBucketAccessControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageBucketAccessControls.m; sourceTree = "<group>"; };
+		FFCC546D1B5677B80000AF2E /* GTLStorageBuckets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageBuckets.h; sourceTree = "<group>"; };
+		FFCC546E1B5677B80000AF2E /* GTLStorageBuckets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageBuckets.m; sourceTree = "<group>"; };
+		FFCC546F1B5677B80000AF2E /* GTLStorageChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageChannel.h; sourceTree = "<group>"; };
+		FFCC54701B5677B80000AF2E /* GTLStorageChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageChannel.m; sourceTree = "<group>"; };
+		FFCC54711B5677B80000AF2E /* GTLStorageConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageConstants.h; sourceTree = "<group>"; };
+		FFCC54721B5677B80000AF2E /* GTLStorageConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageConstants.m; sourceTree = "<group>"; };
+		FFCC54731B5677B80000AF2E /* GTLStorageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageObject.h; sourceTree = "<group>"; };
+		FFCC54741B5677B80000AF2E /* GTLStorageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageObject.m; sourceTree = "<group>"; };
+		FFCC54751B5677B80000AF2E /* GTLStorageObjectAccessControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageObjectAccessControl.h; sourceTree = "<group>"; };
+		FFCC54761B5677B80000AF2E /* GTLStorageObjectAccessControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageObjectAccessControl.m; sourceTree = "<group>"; };
+		FFCC54771B5677B80000AF2E /* GTLStorageObjectAccessControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageObjectAccessControls.h; sourceTree = "<group>"; };
+		FFCC54781B5677B80000AF2E /* GTLStorageObjectAccessControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageObjectAccessControls.m; sourceTree = "<group>"; };
+		FFCC54791B5677B80000AF2E /* GTLStorageObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageObjects.h; sourceTree = "<group>"; };
+		FFCC547A1B5677B80000AF2E /* GTLStorageObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageObjects.m; sourceTree = "<group>"; };
+		FFCC547B1B5677B80000AF2E /* GTLStorageRewriteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLStorageRewriteResponse.h; sourceTree = "<group>"; };
+		FFCC547C1B5677B80000AF2E /* GTLStorageRewriteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLStorageRewriteResponse.m; sourceTree = "<group>"; };
+		FFCC548B1B5677CB0000AF2E /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		FFCC548C1B5677CB0000AF2E /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		FFCC548D1B5677CB0000AF2E /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		FFCC54911B567AD10000AF2E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FFCC54931B567AD60000AF2E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FFCC54951B567AE00000AF2E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		FFCC54971B567AED0000AF2E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		FFCC54991B567AF20000AF2E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FFCC549B1B567AF70000AF2E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FFCC549D1B567B060000AF2E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FFCC549F1B567B0F0000AF2E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FFCC54A11B567B1D0000AF2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFCC54A31B567B230000AF2E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FFCC54A51B567B2A0000AF2E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FFCC54A71B567B370000AF2E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FFCC54A91B567B3D0000AF2E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FFCC54AC1B56A7F90000AF2E /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
+		FFCC54AD1B56A7F90000AF2E /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
+		FFCC54AE1B56A7F90000AF2E /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
+		FFCC54AF1B56A7F90000AF2E /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h"; sourceTree = "<group>"; };
+		FFCC54B01B56A7F90000AF2E /* MCNewCustomLayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayeredView.h; sourceTree = "<group>"; };
+		FFCC54B11B56A7F90000AF2E /* MCNewCustomLayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayeredView.m; sourceTree = "<group>"; };
+		FFCC54B21B56A7F90000AF2E /* MCPercentageDoughnutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPercentageDoughnutView.h; sourceTree = "<group>"; };
+		FFCC54B31B56A7F90000AF2E /* MCPercentageDoughnutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPercentageDoughnutView.m; sourceTree = "<group>"; };
+		FFCC54B41B56A7F90000AF2E /* MCSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSliceLayer.h; sourceTree = "<group>"; };
+		FFCC54B51B56A7F90000AF2E /* MCSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSliceLayer.m; sourceTree = "<group>"; };
+		FFCC54B61B56A7F90000AF2E /* MCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtil.h; sourceTree = "<group>"; };
+		FFCC54B71B56A7F90000AF2E /* MCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +138,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCC54AA1B567B3D0000AF2E /* QuartzCore.framework in Frameworks */,
+				FFCC54A81B567B370000AF2E /* CFNetwork.framework in Frameworks */,
+				FFCC54A61B567B2A0000AF2E /* SystemConfiguration.framework in Frameworks */,
+				FFCC54A41B567B230000AF2E /* MobileCoreServices.framework in Frameworks */,
+				FFCC54A21B567B1D0000AF2E /* CoreGraphics.framework in Frameworks */,
+				FFCC54A01B567B100000AF2E /* Security.framework in Frameworks */,
+				FFCC549E1B567B060000AF2E /* MediaPlayer.framework in Frameworks */,
+				FFCC549C1B567AF70000AF2E /* CoreMotion.framework in Frameworks */,
+				FFCC549A1B567AF20000AF2E /* CoreLocation.framework in Frameworks */,
+				FFCC54981B567AED0000AF2E /* AssetsLibrary.framework in Frameworks */,
+				FFCC54961B567AE00000AF2E /* AddressBook.framework in Frameworks */,
+				FFCC54941B567AD60000AF2E /* CoreText.framework in Frameworks */,
+				FFCC54921B567AD10000AF2E /* AudioToolbox.framework in Frameworks */,
+				FFCC548E1B5677CB0000AF2E /* GoogleOpenSource.framework in Frameworks */,
+				FFCC54901B5677CB0000AF2E /* GooglePlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +169,19 @@
 		FFCC542C1B5677500000AF2E = {
 			isa = PBXGroup;
 			children = (
+				FFCC54A91B567B3D0000AF2E /* QuartzCore.framework */,
+				FFCC54A71B567B370000AF2E /* CFNetwork.framework */,
+				FFCC54A51B567B2A0000AF2E /* SystemConfiguration.framework */,
+				FFCC54A31B567B230000AF2E /* MobileCoreServices.framework */,
+				FFCC54A11B567B1D0000AF2E /* CoreGraphics.framework */,
+				FFCC549F1B567B0F0000AF2E /* Security.framework */,
+				FFCC549D1B567B060000AF2E /* MediaPlayer.framework */,
+				FFCC549B1B567AF70000AF2E /* CoreMotion.framework */,
+				FFCC54991B567AF20000AF2E /* CoreLocation.framework */,
+				FFCC54971B567AED0000AF2E /* AssetsLibrary.framework */,
+				FFCC54951B567AE00000AF2E /* AddressBook.framework */,
+				FFCC54931B567AD60000AF2E /* CoreText.framework */,
+				FFCC54911B567AD10000AF2E /* AudioToolbox.framework */,
 				FFCC54371B5677500000AF2E /* GoogleCloudStorage */,
 				FFCC54511B5677500000AF2E /* GoogleCloudStorageTests */,
 				FFCC54361B5677500000AF2E /* Products */,
@@ -81,6 +200,7 @@
 		FFCC54371B5677500000AF2E /* GoogleCloudStorage */ = {
 			isa = PBXGroup;
 			children = (
+				FFCC545E1B5677670000AF2E /* OtherResources */,
 				FFCC543C1B5677500000AF2E /* AppDelegate.h */,
 				FFCC543D1B5677500000AF2E /* AppDelegate.m */,
 				FFCC543F1B5677500000AF2E /* ViewController.h */,
@@ -117,6 +237,80 @@
 				FFCC54531B5677500000AF2E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFCC545E1B5677670000AF2E /* OtherResources */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54AB1B56A7F90000AF2E /* src */,
+				FFCC548B1B5677CB0000AF2E /* GoogleOpenSource.framework */,
+				FFCC548C1B5677CB0000AF2E /* GooglePlus.bundle */,
+				FFCC548D1B5677CB0000AF2E /* GooglePlus.framework */,
+				FFCC545F1B5677B80000AF2E /* Storage */,
+			);
+			name = OtherResources;
+			sourceTree = "<group>";
+		};
+		FFCC545F1B5677B80000AF2E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54601B5677B80000AF2E /* Generated */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FFCC54601B5677B80000AF2E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54611B5677B80000AF2E /* GTLQueryStorage.h */,
+				FFCC54621B5677B80000AF2E /* GTLQueryStorage.m */,
+				FFCC54631B5677B80000AF2E /* GTLServiceStorage.h */,
+				FFCC54641B5677B80000AF2E /* GTLServiceStorage.m */,
+				FFCC54651B5677B80000AF2E /* GTLStorage.h */,
+				FFCC54661B5677B80000AF2E /* GTLStorage_Sources.m */,
+				FFCC54671B5677B80000AF2E /* GTLStorageBucket.h */,
+				FFCC54681B5677B80000AF2E /* GTLStorageBucket.m */,
+				FFCC54691B5677B80000AF2E /* GTLStorageBucketAccessControl.h */,
+				FFCC546A1B5677B80000AF2E /* GTLStorageBucketAccessControl.m */,
+				FFCC546B1B5677B80000AF2E /* GTLStorageBucketAccessControls.h */,
+				FFCC546C1B5677B80000AF2E /* GTLStorageBucketAccessControls.m */,
+				FFCC546D1B5677B80000AF2E /* GTLStorageBuckets.h */,
+				FFCC546E1B5677B80000AF2E /* GTLStorageBuckets.m */,
+				FFCC546F1B5677B80000AF2E /* GTLStorageChannel.h */,
+				FFCC54701B5677B80000AF2E /* GTLStorageChannel.m */,
+				FFCC54711B5677B80000AF2E /* GTLStorageConstants.h */,
+				FFCC54721B5677B80000AF2E /* GTLStorageConstants.m */,
+				FFCC54731B5677B80000AF2E /* GTLStorageObject.h */,
+				FFCC54741B5677B80000AF2E /* GTLStorageObject.m */,
+				FFCC54751B5677B80000AF2E /* GTLStorageObjectAccessControl.h */,
+				FFCC54761B5677B80000AF2E /* GTLStorageObjectAccessControl.m */,
+				FFCC54771B5677B80000AF2E /* GTLStorageObjectAccessControls.h */,
+				FFCC54781B5677B80000AF2E /* GTLStorageObjectAccessControls.m */,
+				FFCC54791B5677B80000AF2E /* GTLStorageObjects.h */,
+				FFCC547A1B5677B80000AF2E /* GTLStorageObjects.m */,
+				FFCC547B1B5677B80000AF2E /* GTLStorageRewriteResponse.h */,
+				FFCC547C1B5677B80000AF2E /* GTLStorageRewriteResponse.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		FFCC54AB1B56A7F90000AF2E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC54AC1B56A7F90000AF2E /* MCCore.h */,
+				FFCC54AD1B56A7F90000AF2E /* MCNewCustomLayer.h */,
+				FFCC54AE1B56A7F90000AF2E /* MCNewCustomLayer.m */,
+				FFCC54AF1B56A7F90000AF2E /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */,
+				FFCC54B01B56A7F90000AF2E /* MCNewCustomLayeredView.h */,
+				FFCC54B11B56A7F90000AF2E /* MCNewCustomLayeredView.m */,
+				FFCC54B21B56A7F90000AF2E /* MCPercentageDoughnutView.h */,
+				FFCC54B31B56A7F90000AF2E /* MCPercentageDoughnutView.m */,
+				FFCC54B41B56A7F90000AF2E /* MCSliceLayer.h */,
+				FFCC54B51B56A7F90000AF2E /* MCSliceLayer.m */,
+				FFCC54B61B56A7F90000AF2E /* MCUtil.h */,
+				FFCC54B71B56A7F90000AF2E /* MCUtil.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +395,7 @@
 			files = (
 				FFCC54441B5677500000AF2E /* Main.storyboard in Resources */,
 				FFCC54491B5677500000AF2E /* LaunchScreen.xib in Resources */,
+				FFCC548F1B5677CB0000AF2E /* GooglePlus.bundle in Resources */,
 				FFCC54461B5677500000AF2E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +414,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCC54861B5677B80000AF2E /* GTLStorageObject.m in Sources */,
+				FFCC547F1B5677B80000AF2E /* GTLStorage_Sources.m in Sources */,
+				FFCC54851B5677B80000AF2E /* GTLStorageConstants.m in Sources */,
+				FFCC547E1B5677B80000AF2E /* GTLServiceStorage.m in Sources */,
+				FFCC54BA1B56A7F90000AF2E /* MCPercentageDoughnutView.m in Sources */,
+				FFCC54BB1B56A7F90000AF2E /* MCSliceLayer.m in Sources */,
+				FFCC54891B5677B80000AF2E /* GTLStorageObjects.m in Sources */,
+				FFCC54871B5677B80000AF2E /* GTLStorageObjectAccessControl.m in Sources */,
+				FFCC54B91B56A7F90000AF2E /* MCNewCustomLayeredView.m in Sources */,
 				FFCC54411B5677500000AF2E /* ViewController.m in Sources */,
+				FFCC54821B5677B80000AF2E /* GTLStorageBucketAccessControls.m in Sources */,
+				FFCC54801B5677B80000AF2E /* GTLStorageBucket.m in Sources */,
+				FFCC54841B5677B80000AF2E /* GTLStorageChannel.m in Sources */,
+				FFCC54881B5677B80000AF2E /* GTLStorageObjectAccessControls.m in Sources */,
+				FFCC54B81B56A7F90000AF2E /* MCNewCustomLayer.m in Sources */,
+				FFCC54BC1B56A7F90000AF2E /* MCUtil.m in Sources */,
 				FFCC543E1B5677500000AF2E /* AppDelegate.m in Sources */,
+				FFCC547D1B5677B80000AF2E /* GTLQueryStorage.m in Sources */,
+				FFCC548A1B5677B80000AF2E /* GTLStorageRewriteResponse.m in Sources */,
+				FFCC54831B5677B80000AF2E /* GTLStorageBuckets.m in Sources */,
 				FFCC543B1B5677500000AF2E /* main.m in Sources */,
+				FFCC54811B5677B80000AF2E /* GTLStorageBucketAccessControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +561,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleCloudStorage",
+				);
 				INFOPLIST_FILE = GoogleCloudStorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,8 +577,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleCloudStorage",
+				);
 				INFOPLIST_FILE = GoogleCloudStorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

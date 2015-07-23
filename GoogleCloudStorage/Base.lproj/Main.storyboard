@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,55 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-WD-oqj">
+                                <rect key="frame" x="277" y="276" width="46" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="uBf-1a-Ylf"/>
+                                </constraints>
+                                <state key="normal" image="Google">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="THU-DD-Btu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="09i-AV-i6H">
+                                <rect key="frame" x="200" y="28" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Tbg-Ng-5Su"/>
+                                    <constraint firstAttribute="height" constant="200" id="h73-uF-iP1"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-AM-UbE">
+                                <rect key="frame" x="157" y="393" width="287" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="A8w-sT-rHD"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GqD-WD-oqj" firstAttribute="top" secondItem="09i-AV-i6H" secondAttribute="bottom" constant="48" id="6na-DP-wlJ"/>
+                            <constraint firstItem="09i-AV-i6H" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="9tL-o4-JNk"/>
+                            <constraint firstItem="Iaf-AM-UbE" firstAttribute="top" secondItem="GqD-WD-oqj" secondAttribute="bottom" constant="69" id="FN4-bi-Kru"/>
+                            <constraint firstItem="Iaf-AM-UbE" firstAttribute="leading" secondItem="GqD-WD-oqj" secondAttribute="trailing" constant="-166" id="JUR-yd-kcM"/>
+                            <constraint firstAttribute="centerX" secondItem="09i-AV-i6H" secondAttribute="centerX" id="MzH-G9-74A"/>
+                            <constraint firstAttribute="centerX" secondItem="GqD-WD-oqj" secondAttribute="centerX" id="hZ7-mt-6nS"/>
+                            <constraint firstAttribute="centerY" secondItem="GqD-WD-oqj" secondAttribute="centerY" id="jZj-at-EPX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="googleButton" destination="GqD-WD-oqj" id="79a-qr-0i0"/>
+                        <outlet property="imageView" destination="09i-AV-i6H" id="caY-gk-K9g"/>
+                        <outlet property="progressView" destination="Iaf-AM-UbE" id="BNk-rc-4VP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Google" width="48" height="48"/>
+    </resources>
 </document>
