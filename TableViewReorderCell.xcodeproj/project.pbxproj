@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF20D0BB1B78D93000B79AE0 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF20D0B91B78D93000B79AE0 /* TableViewCell.m */; };
+		FF20D0BC1B78D93000B79AE0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF20D0BA1B78D93000B79AE0 /* TableViewCell.xib */; };
 		FFA303931B1D9DE900666B33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303921B1D9DE900666B33 /* main.m */; };
 		FFA303961B1D9DE900666B33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303951B1D9DE900666B33 /* AppDelegate.m */; };
 		FFA303991B1D9DE900666B33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA303981B1D9DE900666B33 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF20D0B81B78D93000B79AE0 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		FF20D0B91B78D93000B79AE0 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		FF20D0BA1B78D93000B79AE0 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FFA3038D1B1D9DE900666B33 /* TableViewReorderCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewReorderCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA303911B1D9DE900666B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA303921B1D9DE900666B33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +90,9 @@
 				FFA303951B1D9DE900666B33 /* AppDelegate.m */,
 				FFA303971B1D9DE900666B33 /* ViewController.h */,
 				FFA303981B1D9DE900666B33 /* ViewController.m */,
+				FF20D0B81B78D93000B79AE0 /* TableViewCell.h */,
+				FF20D0B91B78D93000B79AE0 /* TableViewCell.m */,
+				FF20D0BA1B78D93000B79AE0 /* TableViewCell.xib */,
 				FFA3039A1B1D9DE900666B33 /* Main.storyboard */,
 				FFA3039D1B1D9DE900666B33 /* Images.xcassets */,
 				FFA3039F1B1D9DE900666B33 /* LaunchScreen.xib */,
@@ -168,6 +176,7 @@
 				TargetAttributes = {
 					FFA3038C1B1D9DE900666B33 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CMU3Y8L7D7;
 					};
 					FFA303A51B1D9DE900666B33 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -200,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA3039C1B1D9DE900666B33 /* Main.storyboard in Resources */,
+				FF20D0BC1B78D93000B79AE0 /* TableViewCell.xib in Resources */,
 				FFA303A11B1D9DE900666B33 /* LaunchScreen.xib in Resources */,
 				FFA3039E1B1D9DE900666B33 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA303991B1D9DE900666B33 /* ViewController.m in Sources */,
+				FF20D0BB1B78D93000B79AE0 /* TableViewCell.m in Sources */,
 				FFA303961B1D9DE900666B33 /* AppDelegate.m in Sources */,
 				FFA303931B1D9DE900666B33 /* main.m in Sources */,
 			);
@@ -347,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TableViewReorderCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +370,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TableViewReorderCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +431,7 @@
 				FFA303B21B1D9DE900666B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFA303B31B1D9DE900666B33 /* Build configuration list for PBXNativeTarget "TableViewReorderCellTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +440,7 @@
 				FFA303B51B1D9DE900666B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
