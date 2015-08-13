@@ -15,6 +15,9 @@
 		CF2A28391B7C9C690003211A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2A28381B7C9C690003211A /* Images.xcassets */; };
 		CF2A283C1B7C9C690003211A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2A283A1B7C9C690003211A /* LaunchScreen.xib */; };
 		CF2A28481B7C9C690003211A /* CanonpagepocTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A28471B7C9C690003211A /* CanonpagepocTests.m */; };
+		CF2A28541B7C9FFA0003211A /* KillDil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2A28511B7C9FFA0003211A /* KillDil.jpg */; };
+		CF2A28551B7C9FFA0003211A /* PK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2A28521B7C9FFA0003211A /* PK.jpg */; };
+		CF2A28561B7C9FFA0003211A /* stadium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2A28531B7C9FFA0003211A /* stadium.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		CF2A28411B7C9C690003211A /* CanonpagepocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanonpagepocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A28461B7C9C690003211A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2A28471B7C9C690003211A /* CanonpagepocTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanonpagepocTests.m; sourceTree = "<group>"; };
+		CF2A28511B7C9FFA0003211A /* KillDil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KillDil.jpg; sourceTree = "<group>"; };
+		CF2A28521B7C9FFA0003211A /* PK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PK.jpg; sourceTree = "<group>"; };
+		CF2A28531B7C9FFA0003211A /* stadium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stadium.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		CF2A28281B7C9C690003211A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF2A28511B7C9FFA0003211A /* KillDil.jpg */,
+				CF2A28521B7C9FFA0003211A /* PK.jpg */,
+				CF2A28531B7C9FFA0003211A /* stadium.jpg */,
 				CF2A28291B7C9C690003211A /* Info.plist */,
 				CF2A282A1B7C9C690003211A /* main.m */,
 			);
@@ -202,9 +211,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2A28551B7C9FFA0003211A /* PK.jpg in Resources */,
+				CF2A28561B7C9FFA0003211A /* stadium.jpg in Resources */,
 				CF2A28371B7C9C690003211A /* Main.storyboard in Resources */,
 				CF2A283C1B7C9C690003211A /* LaunchScreen.xib in Resources */,
 				CF2A28391B7C9C690003211A /* Images.xcassets in Resources */,
+				CF2A28541B7C9FFA0003211A /* KillDil.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
