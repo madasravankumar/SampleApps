@@ -13,15 +13,22 @@
 @end
 
 @implementation ViewController
+@synthesize swipe;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Default.png"]]];
+    /*swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(show)];
+    [self.view addGestureRecognizer:swipe];*/
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

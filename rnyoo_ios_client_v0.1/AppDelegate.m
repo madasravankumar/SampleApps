@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
 
@@ -122,6 +124,31 @@
             abort();
         }
     }
+}
+
+
+#pragma mark - Application handle url
+
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    //return YES;//[GSSession.activeSession handleOpenURL:url];
+    
+    if([url.scheme isEqualToString:@"fb1707429346147331"])
+        
+    {
+        //        return [FBAppCall handleOpenURL:url  sourceApplication:sourceApplication];
+        return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                              openURL:url
+                                                    sourceApplication:sourceApplication
+                                                           annotation:annotation];
+        
+    }
+    
+    return YES;
 }
 
 @end
